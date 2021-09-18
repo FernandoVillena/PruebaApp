@@ -1,0 +1,29 @@
+<ion-content>
+  <div class="seccion-login ion-padding">
+    <div class="heading ion-padding">
+      <h1 class="ion-text-center">¡Bienvenido!</h1>
+      <p class="ion-text-center">Inicia sesión o registrate en Duoc UC</p>
+    </div>
+    <div class="login-form ion-padding">
+      <div class="form-input">
+        <ion-icon name="person-circle-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating">Usuario</ion-label>
+          <ion-input type="text" placeholder="usu.usuario" #u></ion-input>
+        </ion-item>     
+      </div>
+      <div class="form-input">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" #p></ion-input>
+        </ion-item>     
+      </div>
+    </div>
+    <div class="action-buttons ion-padding">
+      <ion-button (click)="onClick(u,p)" size="large" class="login-button" color="dark" fill="outline">Iniciar sesión</ion-button>
+      <p>¿Olvidó su contraseña?</p>
+      <ion-button  class="signup-button" size="large" fill="outline" color="dark">Registrarme</ion-button>
+    </div>
+  </div>
+</ion-content>
